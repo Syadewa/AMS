@@ -22,6 +22,8 @@ RUN apk add --no-cache \
     oniguruma-dev \
     libpng-dev \
     libxml2-dev \
+    bind-tools \
+    iputils \
     && docker-php-ext-install pdo pdo_mysql mbstring zip exif pcntl bcmath gd
 
 # Install Composer
